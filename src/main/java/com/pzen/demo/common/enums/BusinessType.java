@@ -3,7 +3,7 @@ package com.pzen.demo.common.enums;
 /**
  * 业务操作类型
  *
- * @author ruoyi
+ * @author pzen
  */
 public enum BusinessType {
     /**

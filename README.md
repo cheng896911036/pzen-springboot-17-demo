@@ -16,6 +16,7 @@ https://central.sonatype.com/
 * 密码字符传弱口令校验
 * Redis 缓存
 * 接口访问限流
+    使用注解@RateLimiter(value = 1, time = 1)
 * @download 文件下载 去除../ ./ ..
 * @upload 文件上传 去除../ ./ ..
 * 时间类使用java.time

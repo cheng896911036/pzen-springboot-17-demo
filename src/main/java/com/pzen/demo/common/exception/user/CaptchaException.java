@@ -3,7 +3,7 @@ package com.pzen.demo.common.exception.user;
 /**
  * 验证码错误异常类
  *
- * @author ruoyi
+ * @author pzen
  */
 public class CaptchaException extends UserException
 {

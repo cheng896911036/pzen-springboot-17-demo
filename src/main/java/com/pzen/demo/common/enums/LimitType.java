@@ -3,7 +3,7 @@ package com.pzen.demo.common.enums;
 /**
  * 限流类型
  *
- * @author ruoyi
+ * @author pzen
  */
 
 public enum LimitType {

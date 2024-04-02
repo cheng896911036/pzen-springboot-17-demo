@@ -5,7 +5,7 @@ import com.pzen.demo.common.utils.StringUtils;
 /**
  * 分页数据
  *
- * @author ruoyi
+ * @author pzen
  */
 public class PageDomain
 {

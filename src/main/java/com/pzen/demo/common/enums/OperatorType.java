@@ -3,7 +3,7 @@ package com.pzen.demo.common.enums;
 /**
  * 操作人类别
  *
- * @author ruoyi
+ * @author pzen
  */
 public enum OperatorType {
     /**

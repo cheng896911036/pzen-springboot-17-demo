@@ -6,7 +6,8 @@ import com.pzen.demo.common.utils.DateUtils;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @author ruoyi 序列生成类
+ *   序列生成类
+ * @author pzen
  */
 public class Seq
 {

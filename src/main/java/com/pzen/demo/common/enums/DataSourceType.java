@@ -3,7 +3,7 @@ package com.pzen.demo.common.enums;
 /**
  * 数据源
  *
- * @author ruoyi
+ * @author pzen
  */
 public enum DataSourceType {
     /**

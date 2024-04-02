@@ -3,7 +3,7 @@ package com.pzen.demo.common.exception.user;
 /**
  * 用户错误最大次数异常类
  *
- * @author ruoyi
+ * @author pzen
  */
 public class UserPasswordRetryLimitExceedException extends UserException
 {
