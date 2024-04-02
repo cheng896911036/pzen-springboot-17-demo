@@ -8,7 +8,7 @@ import com.pzen.demo.common.utils.sql.SqlUtil;
 /**
  * 分页工具类
  *
- * @author ruoyi
+ * @author pzen
  */
 public class PageUtils extends PageHelper
 {

@@ -17,7 +17,7 @@ import java.util.Arrays;
 /**
  * 图片处理工具类
  *
- * @author ruoyi
+ * @author pzen
  */
 public class ImageUtils
 {

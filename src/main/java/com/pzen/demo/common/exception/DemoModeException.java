@@ -3,7 +3,7 @@ package com.pzen.demo.common.exception;
 /**
  * 演示模式异常
  *
- * @author ruoyi
+ * @author pzen
  */
 public class DemoModeException extends RuntimeException
 {

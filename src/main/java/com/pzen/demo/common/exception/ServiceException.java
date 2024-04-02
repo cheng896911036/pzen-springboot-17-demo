@@ -3,7 +3,7 @@ package com.pzen.demo.common.exception;
 /**
  * 业务异常
  *
- * @author ruoyi
+ * @author pzen
  */
 public final class ServiceException extends RuntimeException
 {

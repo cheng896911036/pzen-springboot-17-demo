@@ -3,7 +3,7 @@ package com.pzen.demo.common.exception.user;
 /**
  * 黑名单IP异常类
  *
- * @author ruoyi
+ * @author pzen
  */
 public class BlackListException extends UserException
 {

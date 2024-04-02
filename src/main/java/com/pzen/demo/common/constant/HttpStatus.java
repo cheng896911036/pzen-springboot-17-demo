@@ -3,7 +3,7 @@ package com.pzen.demo.common.constant;
 /**
  * 返回状态码
  *
- * @author ruoyi
+ * @author pzen
  */
 public class HttpStatus {
     /**

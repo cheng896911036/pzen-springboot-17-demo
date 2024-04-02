@@ -3,7 +3,7 @@ package com.pzen.demo.common.exception;
 /**
  * 全局异常
  *
- * @author ruoyi
+ * @author pzen
  */
 public class GlobalException extends RuntimeException
 {

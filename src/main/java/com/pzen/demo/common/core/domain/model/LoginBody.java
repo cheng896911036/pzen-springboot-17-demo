@@ -3,7 +3,7 @@ package com.pzen.demo.common.core.domain.model;
 /**
  * 用户登录对象
  *
- * @author ruoyi
+ * @author pzen
  */
 public class LoginBody
 {

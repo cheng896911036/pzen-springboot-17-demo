@@ -3,7 +3,7 @@ package com.pzen.demo.common.utils.sign;
 /**
  * Base64工具类
  *
- * @author ruoyi
+ * @author pzen
  */
 public final class Base64
 {
