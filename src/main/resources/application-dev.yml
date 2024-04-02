@@ -1,0 +1,59 @@
+# 数据源配置
+spring:
+    # 数据库连接池配置
+    datasource:
+        url: jdbc:mysql://localhost:3306/pzen_springboot_17_demo?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+        username: root
+        password: root
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        hikari:
+            connection-timeout: 60000
+            idle-timeout: 60000
+            max-lifetime: 1800000
+            maximum-pool-size: 10
+            minimum-idle: 5
+            connection-test-query: select 1
+            pool-name: pzen-springboot-17-demo-pool
+            validation-timeout: 30000
+            data-source-properties:
+                cachePrepStmts: true
+                prepStmtCacheSize: 250
+                prepStmtCacheSqlLimit: 2048
+                useServerPrepStmts: true
+                useLocalSessionState: true
+                useLocalTransactionState: true
+                rewriteBatchedStatements: true
+                cacheResultSetMetadata: true
+                cacheServerConfiguration: true
+                maintainTimeStats: false
+                zeroDateTimeBehavior: convertToNull
+                useSSL: false
+                allowPublicKeyRetrieval: true
+                allowMultiQueries: true
+                useUnicode: true
+                characterEncoding: utf-8
+                serverTimezone: Asia/Shanghai
+                useLegacyDatetimeCode: false
+                allowLoadLocalInfile: false
+                allowUrlInLocalInfile: false
+
+#Ebean连接数据库配置 如果使用test单元测试请修改 application-test.yml
+ebean:
+    dbSchema: ${db.name:pzen_springboot_17_demo}
+    migration.run: true
+datasource:
+    default: db
+    username: ${db.username:root}
+    password: ${db.password:root}
+    databaseUrl: ${db.url:jdbc:mysql://127.0.0.1:3306/pzen_springboot_17_demo?useSSL=false&allowPublicKeyRetrieval=true}
+    databaseDriver: ${db.driverClassName:com.mysql.cj.jdbc.Driver}
+    mysql:
+        version: 8.0
+        collation:
+            default
+    ddl:
+        generate: true
+        run: true
+        runIfTableExists: true
+        initSql: /sql/initialise-test-db.sql
+        seedSql: /sql/seed-test-db.sql
