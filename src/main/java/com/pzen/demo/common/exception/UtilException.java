@@ -3,7 +3,7 @@ package com.pzen.demo.common.exception;
 /**
  * 工具类异常
  *
- * @author pzen
+ * @author ruoyi
  */
 public class UtilException extends RuntimeException
 {

@@ -3,7 +3,7 @@ package com.pzen.demo.common.constant;
 /**
  * 缓存的key 常量
  *
- * @author pzen
+ * @author ruoyi
  */
 public class CacheConstants {
     /**

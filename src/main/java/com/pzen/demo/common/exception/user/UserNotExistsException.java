@@ -3,7 +3,7 @@ package com.pzen.demo.common.exception.user;
 /**
  * 用户不存在异常类
  *
- * @author pzen
+ * @author ruoyi
  */
 public class UserNotExistsException extends UserException
 {

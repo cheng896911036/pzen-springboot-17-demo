@@ -3,7 +3,7 @@ package com.pzen.demo.common.utils.file;
 /**
  * 媒体类型工具类
  *
- * @author pzen
+ * @author ruoyi
  */
 public class MimeTypeUtils
 {

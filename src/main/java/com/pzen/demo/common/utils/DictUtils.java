@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 字典工具类
  *
- * @author pzen
+ * @author ruoyi
  */
 public class DictUtils
 {

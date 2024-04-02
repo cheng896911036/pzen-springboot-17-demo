@@ -17,7 +17,7 @@ import java.nio.charset.StandardCharsets;
 /**
  * 文件处理工具类
  *
- * @author pzen
+ * @author ruoyi
  */
 public class FileUtils
 {
@@ -251,7 +251,7 @@ public class FileUtils
     }
 
     /**
-     * 获取文件名称 /profile/upload/2022/04/16/xxxx.png -- xxxx.png
+     * 获取文件名称 /profile/upload/2022/04/16/ruoyi.png -- ruoyi.png
      *
      * @param fileName 路径名称
      * @return 没有文件路径的名称
@@ -269,7 +269,7 @@ public class FileUtils
     }
 
     /**
-     * 获取不带后缀文件名称 /profile/upload/2022/04/16/xxxx.png -- xxxx
+     * 获取不带后缀文件名称 /profile/upload/2022/04/16/ruoyi.png -- ruoyi
      *
      * @param fileName 路径名称
      * @return 没有文件路径和后缀的名称

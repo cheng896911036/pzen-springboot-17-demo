@@ -5,7 +5,7 @@ import com.pzen.demo.common.utils.StringUtils;
 /**
  * 转义和反转义工具类
  *
- * @author pzen
+ * @author ruoyi
  */
 public class EscapeUtil
 {

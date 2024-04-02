@@ -3,7 +3,7 @@ package com.pzen.demo.common.enums;
 /**
  * 用户状态
  *
- * @author pzen
+ * @author ruoyi
  */
 public enum UserStatus {
     OK("0", "正常"), DISABLE("1", "停用"), DELETED("2", "删除");

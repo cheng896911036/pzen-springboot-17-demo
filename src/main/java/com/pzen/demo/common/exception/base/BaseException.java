@@ -6,7 +6,7 @@ import com.pzen.demo.common.utils.StringUtils;
 /**
  * 基础异常
  *
- * @author pzen
+ * @author ruoyi
  */
 public class BaseException extends RuntimeException
 {

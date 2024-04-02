@@ -3,7 +3,7 @@ package com.pzen.demo.common.constant;
 /**
  * 任务调度通用常量
  *
- * @author pzen
+ * @author ruoyi
  */
 public class ScheduleConstants {
     public static final String TASK_CLASS_NAME = "TASK_CLASS_NAME";

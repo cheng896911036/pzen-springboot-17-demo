@@ -3,7 +3,7 @@ package com.pzen.demo.common.utils.uuid;
 /**
  * ID生成器工具类
  *
- * @author pzen
+ * @author ruoyi
  */
 public class IdUtils
 {

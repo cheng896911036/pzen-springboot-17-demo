@@ -5,7 +5,7 @@ import com.pzen.demo.common.utils.StringUtils;
 /**
  * 字符串格式化
  *
- * @author pzen
+ * @author ruoyi
  */
 public class StrFormatter
 {

@@ -8,7 +8,7 @@ import java.io.StringWriter;
 /**
  * 错误信息处理类。
  *
- * @author pzen
+ * @author ruoyi
  */
 public class ExceptionUtil
 {

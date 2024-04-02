@@ -3,7 +3,7 @@ package com.pzen.demo.common.exception.job;
 /**
  * 计划策略异常
  *
- * @author pzen
+ * @author ruoyi
  */
 public class TaskException extends Exception
 {

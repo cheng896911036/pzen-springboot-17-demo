@@ -8,7 +8,7 @@ import java.util.concurrent.*;
 /**
  * 线程相关工具类.
  *
- * @author pzen
+ * @author ruoyi
  */
 public class Threads
 {

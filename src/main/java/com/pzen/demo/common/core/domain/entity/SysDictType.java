@@ -13,7 +13,7 @@ import jakarta.validation.constraints.Size;
 /**
  * 字典类型表 sys_dict_type
  *
- * @author pzen
+ * @author ruoyi
  */
 public class SysDictType extends BaseEntity
 {

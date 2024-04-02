@@ -16,7 +16,7 @@ import java.io.InputStreamReader;
 /**
  * 构建可重复读取inputStream的request
  *
- * @author pzen
+ * @author ruoyi
  */
 public class RepeatedlyRequestWrapper extends HttpServletRequestWrapper
 {
