@@ -1,0 +1,18 @@
+datasource:
+  default: db
+  platform: mysql #, h2, postgres, mysql, oracle, sqlserver
+  ddlMode: dropCreate # none | dropCreate | migrations | create
+  username: ${db.username:root}
+  password: ${db.password:root}
+  databaseUrl: ${db.url:jdbc:mysql://127.0.0.1:3306/pzen_springboot_17_demo?useSSL=false&allowPublicKeyRetrieval=true}
+  databaseDriver: ${db.driverClassName:com.mysql.cj.jdbc.Driver}
+  mysql:
+    version: 8.0
+    collation: default
+  ddl:
+    generate: true
+    run: true
+    runIfTableExists: true
+    initSql: /sql/initialise-test-db.sql
+    seedSql: /sql/seed-test-db.sql
+
