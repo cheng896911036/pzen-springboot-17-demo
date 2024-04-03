@@ -1,5 +1,7 @@
 package com.pzen.demo.checkpassword;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -12,7 +14,7 @@ import java.util.Properties;
 /**
  * @author pzen
  */
-
+@Slf4j
 public class Config {
     /**
      * 密码口令检测对应系统等级
@@ -290,7 +292,7 @@ public class Config {
                 LIMIT_NUM_SAME_CHAR = "3";
             }
         } catch (Exception e) {
-            System.out.println(e);
+            log.error("读取配置文件失败 ", e);
         }
     }
 
