@@ -24,6 +24,7 @@
         <springboot.version>3.2.4</springboot.version>
         <mysql.version>8.3.0</mysql.version>
         <lombok.version>1.18.32</lombok.version>
+        <undertow.version>2.3.12.Final</undertow.version>
 
         <!--        Ebean Jar Version     Start -->
         <ebean.version>15.0.2</ebean.version>
@@ -69,6 +70,11 @@
             <artifactId>spring-boot-starter-undertow</artifactId>
             <version>${springboot.version}</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.undertow</groupId>-->
+<!--            <artifactId>undertow-core</artifactId>-->
+<!--            <version>${undertow.version}</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>

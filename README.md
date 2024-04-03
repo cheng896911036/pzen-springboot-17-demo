@@ -20,6 +20,7 @@ https://central.sonatype.com/
 * 接口访问限流
     使用注解@RateLimiter(value = 1, time = 1)
 * @download 文件下载 去除../ ./ ..
+  自己整合吧，我是不想弄了 0.0 [@download引用地址](https://github.com/Linyuzai/concept/tree/master)
 * @upload 文件上传 去除../ ./ ..
 * 时间类使用java.time
 * Ebean ORM 需要安装idea插件，直接搜索Ebean enhancement 选择第一个即可，根据插件提示进行配置idea

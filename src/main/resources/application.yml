@@ -31,39 +31,31 @@ spring:
           max-active: 8 # 连接池的最大数据库连接数
           max-wait: 1000ms # #连接池最大阻塞等待时间（使用负值 -1ms 表示没有限制）
 
-
 server:
-  port: 8888 #服务器启动监听端口
+  port: 8443
+  http-port: 8080
   servlet:
     context-path: / # 应用的访问路径
-  #使用Undertow配置
+  http2:
+    enabled: true
+  #使用Undertow配置localhost.jks 具体配置方式请到/pathSSL/生成本地测试的SSL秘钥和证书.txt中查看
+  ssl:
+    enabled: true
+    key-store: ./pathSSL/localhost.jks
+    key-alias: localhost
+    key-store-type: JKS
+    key-store-password: localhost # 秘钥库密码
+    key-password: localhost # 如果与密钥库密码不同，填写证书私钥的密码；否则可以省略，使用密钥库密码作为默认值
   undertow:
-    # 是否开启HTTP/2支持
-    http2-enabled: true
-    # 最大HTTP请求头大小
-    max-http-header-size: 10000
-    # IO线程数，用于处理网络IO操作
-    io-threads: 8
-    # 工作线程数，用于处理业务逻辑
-    worker-threads: 256
-    # 配置buffer-size
-    buffer-size: 10240
-    # 是否禁用X-Forwarded-* headers的支持
-    disable-x-forwarded-headers: false
-    # 其他可能的定制化配置，如AJP监听器、SSL配置等
-    listeners:
-      - type: HTTP
-        host: localhost
-        port: 8080
-      # 若有HTTPS需求
+    buffer-size: 16KB # 缓冲区大小 根据网络带宽和请求响应数据大小调整
+    max-http-post-size: 10MB  # 根据实际情况调整，避免恶意请求利用大头攻击
+    threads:
+      io: 8 # 线程池最大线程数 CPU核心数
+      worker: 48 # 线程池最大线程数
 
-#      - type: HTTPS
-#        host: localhost
-#        port: 8443
-#        ssl-context: ssl
-#        # SSL配置
-#        ssl-certificate-files: /PathSSL/cert.pem
-#        ssl-certificate-key-file: /PathSSL/key.pem
+
+
+
 
 
 # token配置
