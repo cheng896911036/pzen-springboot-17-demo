@@ -14,6 +14,8 @@ https://central.sonatype.com/
   全局拦截sql注入，拦截全部传输字符串及对象，将所有sql关键词进行匹配拦截
   路径：src/main/java/com/pzen/demo/common/xxsAndSqlFilterAllRequest
 * 密码字符传弱口令校验
+  可以说是很强的规则验证方式了，就是有点慢，先能用就行，后续再优化
+  路径：src/main/java/com/pzen/demo/checkpassword
 * Redis 缓存
 * 接口访问限流
     使用注解@RateLimiter(value = 1, time = 1)
