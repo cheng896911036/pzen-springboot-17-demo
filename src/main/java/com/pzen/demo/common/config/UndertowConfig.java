@@ -1,6 +1,8 @@
 package com.pzen.demo.common.config;
 
 import io.undertow.Undertow;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.embedded.undertow.UndertowBuilderCustomizer;
 import org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory;
@@ -13,10 +15,13 @@ import org.springframework.context.annotation.Configuration;
  *
  * @author pzen
  */
-
 @Configuration
 public class UndertowConfig {
 
+    Logger log = LoggerFactory.getLogger(UndertowConfig.class);
+
+    @Value("${server.port}")
+    private Integer httpsPort;
 
     @Value("${server.http-port}")
     private Integer httpPort;
@@ -31,6 +36,8 @@ public class UndertowConfig {
             }
         };
         undertowFactory.addBuilderCustomizers(undertowBuilderCustomizer);
+        log.info("Undertow Application is listening on HTTP port::{}", httpPort);
+        log.info("Undertow Application is listening on HTTPS port::{}", httpsPort);
         return undertowFactory;
     }
 }

@@ -30,6 +30,8 @@ https://central.sonatype.com/
 * 代码混淆
   防止反编译
   路径：/proguard.cfg   /pom.xml
+* 启用http https
+  undertow方式
 * 绑定机器码规则
   防止软件被复制
 

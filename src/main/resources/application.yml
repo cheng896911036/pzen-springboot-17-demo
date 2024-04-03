@@ -23,7 +23,7 @@ spring:
       port: 6379 # 端口，默认为6379
       database: 1 # 数据库索引
       password: Qq122076344  # 密码
-      timeout: 10s # 连接超时时间
+      timeout: 3s # 连接超时时间
       lettuce:
         pool:
           min-idle: 0 # 连接池中的最小空闲连接
@@ -51,7 +51,8 @@ server:
     max-http-post-size: 10MB  # 根据实际情况调整，避免恶意请求利用大头攻击
     threads:
       io: 8 # 线程池最大线程数 CPU核心数
-      worker: 48 # 线程池最大线程数
+      worker: 256 # 线程池最大线程数
+
 
 
 
