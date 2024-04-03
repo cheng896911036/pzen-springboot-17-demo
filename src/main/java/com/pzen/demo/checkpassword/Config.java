@@ -1,6 +1,7 @@
 package com.pzen.demo.checkpassword;
 
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
@@ -14,8 +15,10 @@ import java.util.Properties;
 /**
  * @author pzen
  */
-@Slf4j
 public class Config {
+
+    private static final Logger log = LoggerFactory.getLogger(Config.class);
+
     /**
      * 密码口令检测对应系统等级
      */

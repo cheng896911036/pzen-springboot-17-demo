@@ -26,6 +26,11 @@ https://central.sonatype.com/
   https://github.com/ebean-orm/examples
   路径：com/pzen/demo/ebeandemo/config
   配置文件路径：src/main/resources/application-dev.yml  application-test.yml
+* 代码混淆
+  防止反编译
+  路径：/proguard.cfg   /pom.xml
+* 绑定机器码规则
+  防止软件被复制
 
 
 
